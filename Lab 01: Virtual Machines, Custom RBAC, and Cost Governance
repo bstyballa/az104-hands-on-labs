@@ -1,1 +1,19 @@
+# Lab 01: Virtual Machines, Custom RBAC, and Cost Governance
 
+## Objective
+Deploy an Azure Virtual Machine environment enforce mandatory resource tagging via Azure Policy, apply custom Role-Based Access Control (RBAC) scopes, and set up spend alerts.
+
+## Built With
+* Azure Virtual Machines (Windows/Linux)
+* Microsoft Entra ID (RBAC Scopes)
+* Azure Policy & Cost Management
+* Azure Disk Encryption
+
+## Key Architectural Steps
+1. **VM Deployment:** Provisions standard VM size with Disk Encryption enabled.
+2. **Policy Enforcement:** Applied an Azure Policy assignment enforcing `Department` tagging on all resources in the Resource Group.
+3. **Custom RBAC:** Configured a custom Entra ID role providing minimum necessary rights to inspect and restart VMs without full contributor access.
+4. **Cost Governance:** Configured a budget alert at a defined spend threshold triggering an automated notification.
+
+## Verification
+*(Add 2–3 screenshots here showing your custom RBAC scope, policy compliance state, or portal settings)*
